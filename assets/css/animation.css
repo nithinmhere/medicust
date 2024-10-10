@@ -1,0 +1,154 @@
+.fade-down{
+    animation: fadedown;
+    animation: fadedown .8s ease-out;
+}
+@keyframes fadedown{
+    0%{
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+.fade-L-onload-1{
+    animation: fadeinload;
+    animation: fadeinload .8s ease-out;
+}
+
+@keyframes fadeinload{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.fade-in-onload{
+    animation: fadeinonload;
+    animation: fadeinonload .8s ease-out;
+}
+
+@keyframes fadeinonload{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+.fade-up-load{
+    animation: fadeupload;
+    animation: fadeupload .8s ease-out;
+    animation-delay: .1s;
+}
+
+@keyframes fadeupload{
+    0%{
+        transform: translatey(150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+.fade-in-left{
+    animation: fadeinleft;
+    animation-timeline: view();
+}
+@keyframes fadeinleft{
+    0%{
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+.appear{
+    animation: appear;
+    animation-timeline: view( 20% 0%);
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.appear-1{
+    animation: appear-1;
+    animation-timeline: view();
+}
+@keyframes appear-1{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+}
+
+.left-in{
+    animation: leftin;
+    animation-timeline: view(30% 0%);
+}
+
+@keyframes leftin{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.fade-in-r-3{
+    animation: fade-in-r-3;
+    animation-timeline: view(10% 0%);
+}
+@keyframes fade-in-r-3{
+    0%{
+        transform: translateX(100px);
+        opacity: .8;
+    }
+    50%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+/* for mobile devices ----------- */
+@media only screen and (max-width: 480px) {
+    .fade-down{
+        animation: fadedown;
+        animation: fadedown .8s ease-out;
+    }
+    @keyframes fadedown{
+        0%{
+            transform: translatey(-100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translatey(0px);
+            opacity: 1;
+        }
+    }
+}

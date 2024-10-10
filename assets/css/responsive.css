@@ -1,0 +1,1203 @@
+/* for mobile devices ----------- */
+@media only screen and (max-width: 480px) {
+
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    /*----to hide the menu items----*/
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background: #0E76BC;
+        color: #ffffff;
+        position: fixed;
+        top: 0;
+        right: -225px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 100px;
+        padding-left: 25px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0px;
+        padding-bottom: 10px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    }
+
+    nav ul li a::after {
+        content: '';
+        width: 0%;
+        height: 3px;
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+
+    .emergency-contact {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px 0px;
+        border-right: none;
+    }
+
+    .emergency-contact img {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .emergency-contact .em-details {
+        padding: 5px;
+    }
+
+    .emergency-contact .em-details h5 {
+        font-size: 12px;
+        font-weight: 500;
+        color: #dadada;
+    }
+
+    .emergency-contact .em-details h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .appointment {
+        width: 125px;
+        border-radius: 30px;
+        margin: 0 0px;
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 25.5px;
+        color: #0E76BC;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .appointment:hover {
+        background-color: #0E76BC;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+    }
+
+
+    /* banner css start ------------------------------------- */
+    .banner {
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(to right, #192136 10%, rgba(25, 33, 54, 0.5) 100%, rgba(25, 33, 54, 0));
+    }
+
+    .banner .banner-bg-img {
+        position: absolute;
+        z-index: -100;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .banner .banner-contents {
+        margin: 0 5%;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner .banner-contents img {
+        width: 100px;
+        height: 100px;
+        opacity: 5%;
+    }
+
+    .banner .banner-contents .banner-heading {
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 66px;
+        color: #ffffff;
+    }
+
+    .banner .banner-contents .banner-sub-heading {
+        font-size: 16px;
+    }
+
+    .read-more-btn a {
+        width: 135px;
+        padding: 10px 20px;
+    }
+
+    /* about section start -----------*/
+
+    .about-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 80px 0;
+    }
+    .about-left {
+        width: 90%;
+    }
+
+    .about-left .about-left-1 {
+        flex-direction: column;
+    }
+
+    .about-left .about-left-1 .about-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-wrap: break-word;
+    }
+
+    .about-left .about-left-1 h3 {
+        max-width: 360px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        word-wrap: break-word;
+    }
+
+    .about-left .about-left-1 .about-heading-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-left .about-left-2 {
+        margin: 40px 0;
+    }
+
+    .about-left .specialities-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .about-left .specialities-card .spec-1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .about-left .specialities-card .spec-1 img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .about-left .spec-2 h5 {
+        font-size: 18px;
+    }
+
+    .about-right {
+        width: 90%;
+        height: 400px;
+    }
+
+    .about-right .about-right-1 {
+        width: 80%;
+        height: 80%;
+    }
+
+    .about-right .about-right-2 {
+        width: 65%;
+        height: 30%;
+        left: 0;
+    }
+
+    .about-right .about-right-3 {
+        width: 130px;
+        height: 130px;
+        top: 200px;
+        right: 50px;
+    }
+
+    .about-right .about-right-3 h1 {
+        font-size: 36px;
+    }
+
+    .about-right .about-right-3 p {
+        font-size: 14px;
+    }
+
+    /* about section end -----------------------*/
+
+    /* services section start ----------------- */
+    .service-container{
+        flex-direction: column;
+    }
+    .services-left {
+        width: 100%;
+        height: 300px;
+    }
+
+    .emergency-contact-div {
+        width: 100%;
+        left: 0;
+        flex-direction: column;
+    }
+    .emergency-contact-div .emergency-contact-left{
+        padding: 15px 5%;
+    }
+    .emergency-contact-left h4 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .emergency-contact-div .emergency-contact-right {
+        width: 90%;
+        padding: 15px 5%;
+    }
+
+    .services-right {
+        width: 100%;
+    }
+
+    .services-right .services-contents {
+        width: 85%;
+        margin: 5%;
+    }
+
+
+    /* services end -------------------------- */
+
+    /* plan section css start ---------------- */
+
+    .plans-container{
+        width: 100%;
+        margin: 80px 0;
+    }
+    #plans .plan-heading{
+        font-size: 32px;
+        font-weight: 600;
+    }
+    #plans .plan-sub {
+        padding: 0 40px;
+    }
+    .card-container {
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .card-container .plan-card {
+        width: 100%;
+    }
+
+    /* plan section css end ---------------- */
+
+
+    .appointment-cta {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .appointment-cta h2 {
+        margin: 30px 0;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    .appointment-cta .appointment-2 {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    /* faq section css start--------------- */
+
+    .faq-container {
+        width: 100%;
+        margin: 80px 0 ;
+    }
+    #faq .faq-heading {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 49.22px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .accordion {
+        margin: 80px auto;
+        width: 90%;
+    }
+
+    /* faq section css end--------------- */
+
+
+    /* footer css start -------------- */
+    #footer {
+        width: 90%;
+        padding: 50px 5%;
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-1 {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .footer-2 {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .footer-3 {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .footer-3 .location-embed {
+        width: 100%;
+    }
+}
+
+
+/* tablets and ipads -----------*/
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    .container {
+        width: 90%;
+        /* padding: 10px 5%; */
+    }
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    /*----to hide the menu items----*/
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background: #0E76BC;
+        color: #ffffff;
+        position: fixed;
+        top: 0;
+        right: -225px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 100px;
+        padding-left: 25px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0px;
+        padding-bottom: 10px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    }
+
+    nav ul li a::after {
+        content: '';
+        width: 0%;
+        height: 3px;
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+
+    .emergency-contact {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px 0px;
+        border-right: none;
+    }
+
+    .emergency-contact img {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .emergency-contact .em-details {
+        padding: 5px;
+    }
+
+    .emergency-contact .em-details h5 {
+        font-size: 12px;
+        font-weight: 500;
+        color: #dadada;
+    }
+
+    .emergency-contact .em-details h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .appointment {
+        width: 125px;
+        border-radius: 30px;
+        margin: 0 0px;
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 25.5px;
+        color: #0E76BC;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .appointment:hover {
+        background-color: #0E76BC;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+    }
+
+
+    /* banner css start ------------------------------------- */
+    .banner {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        background-image: linear-gradient(to right, #192136 10%, rgba(25, 33, 54, 0.5) 100%, rgba(25, 33, 54, 0));
+    }
+
+    .banner .banner-bg-img {
+        position: absolute;
+        z-index: -100;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .banner .banner-contents {
+        margin: 0 5%;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner .banner-contents img {
+        width: 100px;
+        height: 100px;
+        opacity: 5%;
+    }
+
+    .banner .banner-contents .banner-heading {
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 66px;
+        color: #ffffff;
+    }
+
+    .banner .banner-contents .banner-sub-heading {
+        font-size: 16px;
+    }
+
+    .read-more-btn a {
+        width: 135px;
+        padding: 10px 20px;
+    }
+
+    /* about section start -----------*/
+
+    .about-container{
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 80px 0;
+    }
+    .about-left {
+        width: 90%;
+    }
+
+    .about-left .about-left-1 {
+        flex-direction: column;
+    }
+
+    .about-left .about-left-1 .about-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-wrap: break-word;
+    }
+
+    .about-left .about-left-1 h3 {
+        max-width: 380px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        word-wrap: break-word;
+    }
+
+    .about-left .about-left-1 .about-heading-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-left .about-left-2 {
+        margin: 40px 0;
+    }
+
+    .about-left .specialities-card {
+        width: 100%;
+        margin: 20px 10px 40px 20px;
+    }
+
+    .about-left .specialities-card .spec-1 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .about-left .specialities-card .spec-1 img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .about-left .spec-2 h5 {
+        font-size: 18px;
+    }
+
+    .about-right {
+        width: 90%;
+        height: 500px;
+    }
+
+    .about-right .about-right-1 {
+        width: 80%;
+        height: 80%;
+    }
+
+    .about-right .about-right-2 {
+        width: 65%;
+        height: 40%;
+        left: 0;
+    }
+
+    .about-right .about-right-3 {
+        width: 150px;
+        height: 150px;
+        top: 260px;
+        right: 20%;
+    }
+
+    .about-right .about-right-3 h1 {
+        font-size: 36px;
+    }
+
+    .about-right .about-right-3 p {
+        font-size: 14px;
+    }
+
+    /* about section end -----------------------*/
+
+    /* services section start ----------------- */
+    .service-container{
+        flex-direction: column;
+    }
+    .services-left {
+        width: 100%;
+        height: 300px;
+    }
+
+    .emergency-contact-div {
+        width: 100%;
+        left: 0;
+        flex-direction: column;
+    }
+
+    .emergency-contact-left h4 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .emergency-contact-div .emergency-contact-left{
+        padding: 15px 5%;
+    }
+    .emergency-contact-div .emergency-contact-right {
+        width: 90%;
+        padding: 15px 5%;
+    }
+
+    .services-right {
+        width: 100%;
+    }
+
+    .services-right .services-contents {
+        width: 85%;
+        margin: 5%;
+    }
+
+
+    /* services end -------------------------- */
+
+    /* plan section css start ---------------- */
+
+    .plans-container {
+        width: 100%;
+        margin: 80px 0;
+    }
+    #plans .plan-heading {
+        font-size: 32px;
+        font-weight: 600;
+    }
+    #plans .plan-sub {
+        font-weight: 400;
+    }
+
+    .card-container {
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-container .plan-card {
+        width: 48%;
+
+    }
+
+    /* plan section css end ---------------- */
+
+
+    .appointment-cta {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .appointment-cta h2 {
+        margin: 30px 0;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    .appointment-cta .appointment-2 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* faq section css start--------------- */
+
+    .faq-container {
+        margin: 80px 0 ;
+    }
+    
+
+    #faq .faq-heading {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 49.22px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .accordion {
+        margin: 80px auto;
+        width: 90%;
+    }
+
+    /* faq section css end--------------- */
+
+
+    /* footer css start -------------- */
+    #footer {
+        width: 90%;
+        padding: 50px 5%;
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-1 {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .footer-2 {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .footer-3 {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .footer-3 .location-embed {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Laptops and smaller screens -----------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+        /* padding: 10px 5%; */
+    }
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    /*----to hide the menu items----*/
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background: #0E76BC;
+        color: #ffffff;
+        position: fixed;
+        top: 0;
+        right: -225px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 100px;
+        padding-left: 25px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0px;
+        padding-bottom: 10px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        position: relative;
+    }
+
+    nav ul li a::after {
+        content: '';
+        width: 0%;
+        height: 3px;
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+
+    .emergency-contact {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px 0px;
+        border-right: none;
+    }
+
+    .emergency-contact img {
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .emergency-contact .em-details {
+        padding: 5px;
+    }
+
+    .emergency-contact .em-details h5 {
+        font-size: 12px;
+        font-weight: 500;
+        color: #dadada;
+    }
+
+    .emergency-contact .em-details h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+    }
+
+    .appointment {
+        width: 125px;
+        border-radius: 30px;
+        margin: 0 0px;
+        background-color: #ffffff;
+        border: 1px solid #ffffff;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 25.5px;
+        color: #0E76BC;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .appointment:hover {
+        background-color: #0E76BC;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+    }
+
+
+    /* banner css start ------------------------------------- */
+    .banner {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        background-image: linear-gradient(to right, #192136 10%, rgba(25, 33, 54, 0.5) 100%, rgba(25, 33, 54, 0));
+    }
+
+    .banner .banner-bg-img {
+        position: absolute;
+        z-index: -100;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    .banner .banner-contents {
+        margin: 0 5%;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner .banner-contents img {
+        width: 100px;
+        height: 100px;
+        opacity: 5%;
+    }
+
+    .banner .banner-contents .banner-heading {
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 66px;
+        color: #ffffff;
+    }
+
+    .banner .banner-contents .banner-sub-heading {
+        font-size: 16px;
+    }
+
+    .read-more-btn a {
+        width: 135px;
+        padding: 10px 20px;
+    }
+
+    /* about section start -----------*/
+
+    .about-left {
+        width: 90%;
+    }
+
+    .about-left .about-left-1 {
+        flex-direction: column;
+    }
+
+    .about-left .about-left-1 .about-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-wrap: break-word;
+    }
+
+    .about-left .about-left-1 h3 {
+        max-width: 450px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        word-wrap: break-word;
+    }
+
+    .about-left .about-left-1 .about-heading-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-left .about-left-2 {
+        margin: 40px 0;
+    }
+
+    .about-left .specialities-card{
+        margin: 20px 10px 40px 20px;
+    }
+    .about-left .specialities-card .spec-1 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .about-left .specialities-card .spec-1 img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .about-left .spec-2 h5 {
+        font-size: 18px;
+    }
+
+    .about-right {
+        width: 90%;
+        height: 550px;
+    }
+
+    .about-right .about-right-1 {
+        width: 80%;
+        height: 80%;
+    }
+
+    .about-right .about-right-2 {
+        width: 65%;
+        height: 40%;
+        left: 0;
+    }
+
+    .about-right .about-right-3 {
+        width: 150px;
+        height: 150px;
+        top: 60%;
+        right: 25%;
+    }
+
+    .about-right .about-right-3 h1 {
+        font-size: 36px;
+    }
+
+    .about-right .about-right-3 p {
+        font-size: 14px;
+    }
+
+    /* about section end -----------------------*/
+
+    /* services section start ----------------- */
+
+    .services-left {
+        width: 100%;
+        height: auto;
+    }
+
+    .emergency-contact-div {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        flex-direction: column;
+    }
+
+    .emergency-contact-left h4 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .emergency-contact-div .emergency-contact-left{
+        padding: 15px 5%;
+    }
+    .emergency-contact-div .emergency-contact-right {
+        width: 90%;
+        padding: 15px 5%;
+    }
+
+    .services-right {
+        width: 100%;
+    }
+
+    .services-right .services-contents {
+        width: 85%;
+        margin: 5%;
+    }
+
+
+    /* services end -------------------------- */
+
+    /* plan section css start ---------------- */
+
+    .plans-container {
+        width: 100%;
+        padding: 40px 0;
+        margin: 40px 0 0;
+    }
+    #plans .plan-heading {
+        font-size: 36px;
+    }
+    #plans .plan-sub {
+        font-weight: 400;
+        padding: 0 60px;
+    }
+
+    .card-container {
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    /* plan section css end ---------------- */
+
+
+    .appointment-cta {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .appointment-cta h2 {
+        margin: 30px 0;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    .appointment-cta .appointment-2 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    /* faq section css start--------------- */
+
+    #faq {
+        padding: 40px 0;
+        margin: 40px 0 0;
+    }
+
+    #faq .faq-heading {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 49.22px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .accordion {
+        margin: 80px auto;
+        width: 90%;
+    }
+
+    /* faq section css end--------------- */
+
+
+    /* footer css start -------------- */
+    #footer {
+        width: 90%;
+        padding: 50px 5%;
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .footer-1 {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .footer-2 {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .footer-3 {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .footer-3 .location-embed {
+        width: 100%;
+    }
+}
+
+

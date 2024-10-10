@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    font-family: "Poppins", sans-serif;
+    /* overflow-x: hidden; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #0E76BC;
+}
+
+#header {
+    width: 100%;
+    height: max-content;
+    background-image: url(images/IMG_20231017_215945_834-02-04.jpeg);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.container{
+    padding: 10px 5%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.logo {
+    width: 201px;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 15px 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #0E76BC;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav .fas {
+    display: none;
+}
+
+.emergency-contact {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 2px solid #D9D9D9;
+}
+
+.emergency-contact img {
+    width: 45px;
+    height: 45px;
+}
+
+.emergency-contact .em-details {
+    padding: 5px;
+}
+
+.emergency-contact .em-details h5 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #969696;
+}
+
+.emergency-contact .em-details h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0E76BC;
+}
+
+.appointment {
+    width: 172px;
+    padding: 20px;
+    border-radius: 36px;
+    margin: 0 20px;
+    background-color: #0E76BC;
+    border: 2px solid #0E76BC;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 25.5px;
+    color: #ffffff;
+    text-align: center;
+    transition: .3s;
+}
+.appointment:hover{
+    background-color: #ffffff;
+    color: #0E76BC;
+}
+a {
+    text-decoration: none;
+}
+
+/* banner css start ------------------------------------- */
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #192136 1%, rgba(25, 33, 54, 0.5) 90%, rgba(25, 33, 54, 0));
+}
+
+.banner .banner-bg-img {
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.banner .banner-contents {
+    margin: 0 5%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.banner .banner-contents img {
+    width: 150px;
+    height: 150px;
+    opacity: 5%;
+}
+
+.banner .banner-contents .banner-heading {
+    max-width: 856px;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 86px;
+    color: #ffffff;
+}
+
+.banner .banner-contents .banner-sub-heading {
+    max-width: 600px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #ffffff;
+    opacity: .8;
+    margin-bottom: 20px;
+}
+
+.read-more-btn a {
+    width: 192px;
+    padding: 20px 20px;
+    background-color: #0E76BC;
+    border: 2px solid #0E76BC;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 6px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: .3s;
+}
+
+.read-more-btn a:hover {
+    background-color: transparent;
+    border: 2px solid #0E76BC;
+    color: #ffffff;
+}
+
+
+/* about section css start ------------------------------- */
+
+.about-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 120px 0;
+}
+.about-left {
+    width: 60%;
+}
+
+.about-left .about-left-1 {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.about-left .about-left-1 .about-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-left .about-left-1 h3 {
+    max-width: 80%;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 49.22px;
+}
+
+.about-left .about-left-1 p {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.about-left .about-left-1 .about-heading-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    opacity: 5%;
+}
+
+.about-left .about-left-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.about-left .specialities-card {
+    width: 360px;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    margin: 20px 10px 35px 20px;
+    
+}
+.about-left .specialities-card:hover .spec-2 h5{
+color: #0E76BC;
+}
+.about-left .specialities-card .spec-1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #E7F1F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-left .specialities-card .spec-1 img {
+    width: 41px;
+    height: 41px;
+}
+
+.about-left .specialities-card .spec-2 {
+    width: 80%;
+}
+
+.about-left .spec-2 h5 {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 22.27px;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.about-left .spec-2 p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.27px;
+    color: #3A3A3A;
+
+}
+
+.about-right {
+    width: 30%;
+    height: 500px;
+    position: relative;
+}
+
+.about-right .about-right-1 {
+    width: 320px;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    border-radius: 6px;
+    border: 3px solid #ffffff;
+}
+
+.about-right .about-right-2 {
+    width: 295px;
+    height: 185px;
+    object-fit: cover;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    border-radius: 6px;
+    border: 3px solid #ffffff;
+}
+
+.about-right .about-right-3 {
+    width: 191px;
+    height: 191px;
+    border-radius: 50%;
+    position: absolute;
+    top: 250px;
+    right: 40px;
+    background-color: #00a0aa;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-right .about-right-3 h1 {
+    font-size: 47px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+.about-right .about-right-3 p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* services section css start -------------- */
+
+
+.service-container{
+    width: 100%;
+    height: auto;
+    background-image: url("../img/services-section-bg.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
+.services-left {
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+.emergency-contact-div {
+    width: 80%;
+    position: absolute;
+    bottom: 50px;
+    left: 75px;
+    background-color: #0E76BC;
+    color: #ffffff;
+    display: flex;
+}
+
+.emergency-contact-div .emergency-contact-left {
+    width: max-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+.emergency-contact-left a{
+    color: #ffffff;
+}
+.emergency-contact-left h4 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 39px;
+}
+
+.emergency-contact-left h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.emergency-contact-div .emergency-contact-right {
+    width: 250px;
+    padding: 15px 15px;
+}
+
+.emergency-contact-right p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.services-right {
+    width: 50%;
+    height: auto;
+    position: relative;
+    background-color: #0E76BC;
+    opacity: 80%;
+}
+
+.services-right .services-contents {
+    width: 65%;
+    margin: 50px;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    opacity: 100%;
+}
+
+.services-contents h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 49px;
+    margin-bottom: 20px;
+}
+
+.services-contents h4 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.services-contents p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+/* services section css end -------------- */
+
+
+/* plans section css start--------------- */
+
+
+.plans-container{
+    width: 100%;
+    margin: 120px 0;
+}
+#plans .plan-heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 49.22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#plans .plan-sub {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    padding: 0 60px;
+}
+
+.card-container {
+    width: 90%;
+    margin: 80px 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card-container .plan-card {
+    width: 280px;
+    box-shadow: 0px 13px 19px 0px #00000012;
+    border-radius: 8px;
+    position: relative;
+}
+
+.card-container .plan-card:hover{
+    box-shadow: 0px 13px 18px 0px #0e76bc30;
+}
+.card-container .plan-card:hover .plan-heading h3{
+    color: #0E76BC;
+}
+.floating-element{
+    width: 82px;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 23px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 13px 19px 0px #00000012;
+}
+.floating-element .floating-icon{
+    width: 50%;
+    height: 50%;
+}
+
+
+.plan-card img {
+    width: 100%;
+    height: 122px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.plan-card .plan-content {
+    padding: 45px 23px 23px 23px;
+}
+
+.plan-card .plan-heading {
+    display: flex;
+    align-items: start;
+}
+
+.plan-card .plan-heading h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: start;
+    transition: .3s;
+}
+
+.plan-heading h3 span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.plan-card .plan-content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #3a3a3a;
+}
+
+.highlighted-1,
+.highlighted-2,
+.highlighted-3,
+.highlighted-4{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 5px 10px;
+    width: max-content;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.plan-content .highlighted-1 {
+    background-color: rgba(14, 118, 188, 0.15);
+    color: #0E76BC;
+}
+
+.plan-content .highlighted-2 {
+    background-color: #00A0AA20;
+    color: #00A0AA;
+}
+.plan-content .highlighted-3 {
+    background-color: #bc0e9320;
+    color: #bc0e93;
+}
+.plan-content .highlighted-4 {
+    background-color: #ffb80420;
+    color: #ffb804;
+}
+
+.appointment-cta {
+    width: 90%;
+    height: 220px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("../img/appointment-img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.appointment-cta .overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-image: linear-gradient(to right, rgba(14, 118, 188, 0.7), rgba(14, 118, 188, 0.7));
+}
+
+.appointment-cta h2 {
+    z-index: 2;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #ffffff;
+}
+
+.appointment-cta .appointment-2 {
+    width: auto;
+    padding: 16px 32px 16px 32px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    z-index: 2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #00A0AA;
+    box-shadow: 0px 20px 40px 0px #DF1B4026;
+}
+
+/* plans section css end--------------- */
+
+
+/* faq section css start--------------- */
+
+.faq-container {
+    width: 100%;
+    margin: 120px 0 ;
+}
+
+#faq .faq-heading {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 49.22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#faq .faq-sub {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+.accordion {
+    margin: 50px auto;
+    width: 900px;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border-top: 1px solid #000;
+    position: relative;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+label::after {
+    content: '+';
+    margin-right: 10px;
+    font-size: 28px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.accordion .content {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    content: '-';
+}
+
+/* faq section css end--------------- */
+
+
+/* footer css start -------------- */
+#footer {
+    width: 90%;
+    background-color: #fbfbfb;
+
+    padding: 50px 5%;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #838383;
+}
+.footer-1 {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 0;
+}
+
+.footer-1 .footer-logo {
+    width: 120px;
+
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.footer-1 h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.footer-1 .social-media {
+    display: flex;
+    gap: 30px;
+}
+.footer-1 .social-media i{
+    transition: .3s;
+}
+.footer-1 .social-media i:hover {
+  color: #0E76BC;
+}
+.footer-2 {
+    width: max-content;
+    margin-bottom: 0;
+}
+
+.footer-2 h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.footer-2 p {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+.footer-2 p:hover{
+    color: #0E76BC;
+}
+
+.footer-2 p i {
+    line-height: 21px;
+}
+
+.footer-3 {
+    width: max-content;
+    margin-bottom: 0;
+}
+
+.footer-3 h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+.footer-3 .location-embed {
+    width: 359px;
+    height: 163px;
+}
+
+.location-embed iframe {
+    width: 100%;
+    height: 100%;
+}
+.footer-bottom{
+    margin: 15px 0 0 0;
+}
+.footer-bottom p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+/* footer css end -------------- */
